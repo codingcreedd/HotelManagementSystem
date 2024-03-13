@@ -23,6 +23,3 @@ Once the application is running, you can use the interface to perform various ta
 
 Contributions to this project are welcome! If you have any suggestions for improvements or new features, please feel free to submit a pull request or open an issue.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
