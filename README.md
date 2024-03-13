@@ -15,6 +15,38 @@ The Hotel Management System is designed to streamline various aspects of hotel m
    - **Admin Login**: If you choose to log in as an admin, you'll be required to enter the admin username and password. By default, there is only one username and password for admins unless additional accounts are added to the list. The Admin class will contain a method to authenticate the admin's credentials. Once authenticated, the admin must fill out a form with their details for validation, unless their name already exists in the system. If the admin's details exist in the login history, they can select their profile from a dropdown list.
 
    - **Guest Login**: (To be implemented)
+  
+# Classes and Methods
+
+## Form
+
+- `username` and `password` (String)
+- Constructors
+- Getters and setters for usernames and passwords
+- `validation` method which checks if the username and password are correct
+
+## Employee
+
+- List of employees
+- `usageFrequency` attribute to track how many times an employee logs in
+- `name`, `age`, and `salary`
+- Constructors
+- Getters and setters
+- `toString` method
+- `validation` method which overrides the one from `Form`
+- `logInHistory` method to render names of employees who have logged in before on a dropdown list
+
+## Admin (extends Employee)
+
+- List of admins (type `Form`) containing usernames and passwords
+- List of accessibility in the hotel
+- List of `Form` objects to add new usernames and passwords for admins
+- Constructors with various parameters
+- `validation` method which overrides the one from `Form`
+- `addEmployee` method to add a new employee to the list
+- `addUserAdmin` method to add a new username and password
+- `addLogInFrequency` method to update login frequency
+
 
 ## Installation
 
